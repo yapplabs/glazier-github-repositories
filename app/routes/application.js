@@ -2,7 +2,7 @@ import card from 'card';
 import Conductor from 'conductor';
 
 var ApplicationRoute = Ember.Route.extend({
-  events: {
+  actions: {
     currentUserChanged: function(user) {
       var applicationController = this.controllerFor('application');
 
