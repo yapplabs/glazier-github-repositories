@@ -34,7 +34,7 @@ var card = Conductor.card({
   },
 
   activate: function() {
-    Conductor.Oasis.configure('eventCallback', Ember.run);
+    oasis.configure('eventCallback', Ember.run);
 
     console.log("activate github-repositories");
     this.App = requireModule('app/application');

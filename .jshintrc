@@ -2,6 +2,7 @@
   "predef": [
     "Ember",
     "Conductor",
+    "oasis",
     "$",
     "define",
     "console",
