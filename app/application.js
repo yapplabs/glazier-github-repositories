@@ -8,6 +8,6 @@ var App = Ember.Application.create({
 
 App.deferReadiness();
 
-requireModule('templates');
+require('templates');
 
 export default App;

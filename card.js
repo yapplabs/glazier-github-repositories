@@ -4,7 +4,7 @@ Conductor.require('/vendor/jquery.js');
 Conductor.require('/vendor/handlebars.js');
 Conductor.require('/vendor/ember-latest.js');
 Conductor.require('/vendor/ember_card_bridge.js');
-Conductor.require('/vendor/loader.js');
+Conductor.require('/vendor/resolver.js');
 
 Conductor.requireCSS('/css/glazier_card.css');
 Conductor.requireCSS('card.css');
@@ -37,7 +37,7 @@ var card = Conductor.card({
     oasis.configure('eventCallback', Ember.run);
 
     console.log("activate github-repositories");
-    this.App = requireModule('app/application');
+    this.App = require('app/application');
     this.App.register('card:main', this, { instantiate: false });
   },
 
